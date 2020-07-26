@@ -1,0 +1,208 @@
+html, body {
+    height: 1150px; /*fond jaune prend tte hauteur */
+    /*margin: 0;*/
+}
+
+section {
+    display: flex;
+    justify-content: center; /*centre aussi l'image*/
+    height: 100%;
+    margin: 0;
+    font-size: 95%;
+}
+
+/*************PARTIE GAUCHE***********************/
+aside {
+    display: flex;
+    background-color: rgb(185, 248, 103);
+    height: 100%; /* ? 100% mais n'occupe toute la hauteur */
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+span {
+    color: rgb(5, 189, 235);
+}
+
+h1 {
+    font-size: 300%;
+}
+
+
+
+.justify {
+    text-align: center;
+}
+
+img {
+margin-left: 28%;
+width: 40%;
+border-radius: 50%;
+border: 3px solid; /* solid sinon border n'apparait pas */
+border-color: rgb(5, 189, 235);
+margin-top: 20%;
+margin-bottom: 5%;
+}
+
+.titre {
+    font-size: 150%;
+}
+
+i::before {
+    font-size: 95%;
+}
+
+
+h2 {
+    font-size: 95%;
+    color: rgb(185, 248, 103);
+    background-color: rgb(5, 189, 235);
+    text-align: center;
+}
+
+.left {
+    margin: 10%;
+}
+
+.justify {
+    margin: 10%;
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*****************PARTIE DROITE**********************/
+.mainRight {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.titre {
+    display: flex;
+    flex-direction: row;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+}
+
+.recommandations {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+.recomm2 {
+    margin-left: 40%;
+}
+
+.dates {
+    width: 20%;
+}
+
+hr {
+    width: 100%;
+    margin-left: 0px;
+    background-color: rgb(5, 189, 235);
+}
+
+.h1Hr { /* trait sous h1 */
+    width: 15%;
+    margin-left: 0px;
+    margin-top: -14%;
+    margin-bottom: 20%;
+    background-color: rgb(5, 189, 235);
+}
+
+.h1 { /*div*/
+    margin-top: -20px;
+    margin-bottom: 15%;
+    font-size: 130%;
+}
+
+.texte {
+    margin-left: 5%;
+}
+
+.iconsRight {
+    padding-right: 4%;
+}
+
+.details {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+/*****************RESPONSIVE*************************/
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 414px) { /*moins de 320px*/ /*min-width : si fait plus de 320px*/
+    section {   
+        display: flex;   
+        flex-flow:column-reverse nowrap; 
+        font-size: 80%;
+       }
+/* mis 414px sinon texte déborde ou n'est plus justifié avec Iphone 6 */
+    aside, .dates, .texte, .titreTexte {   
+        font-size: 80%;    }
+
+    img {
+        margin-top: 5%;
+    }
+
+    .texte {   
+        margin-top: -4.5%;    }   
+
+    p.aside, i {   
+            font-size: 60%;    }
+
+    img, i {
+        border: 2.5px;
+    }
+    
+    i::before {
+        font-size: 60%;
+    }
+
+
+    h1 {
+        font-size: 90%;
+        }
+
+    .h1 {
+        font-size: 80%;
+        margin-top: -10px;
+        margin-bottom: 5%;
+        }
+
+        .h1Hr { /* trait sous h1 */
+            width: 15%;
+            margin-left: 0px;
+            margin-top: -4%;
+            margin-bottom: 10%;
+        }
+
+        .recommandations {
+            font-size: 60%;
+        }
+
+
+
+    }
+
+
+ 
+
+    /*h2 {   
+    font-size: 60%;
+    border: 2.5px;
+    }*/
+  }
