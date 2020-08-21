@@ -83,6 +83,10 @@ h2 {
     margin: 5%;
 }
 
+.titreTexte {
+    font-weight: bold;
+}
+
 .titre {
     display: flex;
     flex-direction: row;
