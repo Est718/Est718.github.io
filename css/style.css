@@ -3,7 +3,7 @@ html, body {
     /*margin: 0;*/
 }
 
-main {
+section {
     display: flex;
     justify-content: center; /*centre aussi l'image*/
     height: 100%;
@@ -149,7 +149,7 @@ hr {
 /*****************RESPONSIVE*************************/
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 414px) { /*moins de 320px*/ /*min-width : si fait plus de 320px*/
-    main {   
+    section {   
         display: flex;   
         flex-flow:column-reverse nowrap; 
         font-size: 80%;
