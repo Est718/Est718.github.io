@@ -79,7 +79,6 @@ h2 {
 /*****************PARTIE DROITE**********************/
 .mainRight {
     display: flex;
-    width: 70%;
     flex-direction: column;
     margin: 5%;
 }
