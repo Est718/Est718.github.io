@@ -3,7 +3,7 @@ html, body {
     /*margin: 0;*/
 }
 
-section {
+.main {
     display: flex;
     justify-content: center; /*centre aussi l'image*/
     height: 100%;
