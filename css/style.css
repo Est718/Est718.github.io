@@ -101,7 +101,6 @@ h2 {
 .recommandations {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
 }
 
 .recomm2 {
@@ -196,6 +195,7 @@ hr {
 
         .recommandations {
             font-size: 60%;
+            flex-wrap: wrap;
         }
 
 
