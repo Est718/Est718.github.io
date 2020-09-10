@@ -151,7 +151,7 @@ hr {
     main {   
         display: flex;   
         flex-flow:column-reverse nowrap; 
-        font-size: 150%;
+        font-size: 120%;
        }
 /* mis 414px sinon texte déborde ou n'est plus justifié avec Iphone 6 */
     aside, .dates, .texte, .titreTexte {   
